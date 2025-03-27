@@ -1,31 +1,8 @@
 # python-week-3
-def calculate_discount(price, discount_percent):
-    """
-    Calculate the final price after applying a discount.
-    If the discount is 20% or higher, apply the discount; otherwise, return the original price.
-    """
-    if discount_percent >= 20:
-        return price - (price * discount_percent / 100)
-    return price
-    
-# Prompt the user for input with validation
-try:
-    original_price = float(input("Enter the original price of the item: "))
-    if original_price < 0:
-        raise ValueError("Price cannot be negative.")
-    
-    discount_percent = float(input("Enter the discount percentage: "))
-    if discount_percent < 0 or discount_percent > 100:
-        raise ValueError("Discount percentage must be between 0 and 100.")
-    
-    # Calculate the final price
-    final_price = calculate_discount(original_price, discount_percent)
+Week 3 Assignment
 
-    # Print the result
-    if discount_percent >= 20:
-        print(f"The final price after applying the discount is: {final_price:.2f}")
-    else:
-        print(f"No discount applied. The original price is: {original_price:.2f}")
+Description
 
-except ValueError as e:
-    print(f"Invalid input: {e}")
+#Create a function named calculate_discount(price, discount_percent) that calculates the final price after applying a discount. The function should take the original price (price) and the discount percentage (discount_percent) as parameters. If the discount is 20% or higher, apply the discount; otherwise, return the original price.
+
+#Using the calculate_discount function, prompt the user to enter the original price of an item and the discount percentage. Print the final price after applying the discount, or if no discount was applied, print the original price.
